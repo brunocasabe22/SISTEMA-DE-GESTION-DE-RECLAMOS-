@@ -1,6 +1,21 @@
 {
   "reclamoList": [
-
+    {
+      "reclamoNombre": "Test",
+      "area": "Mantenimiento",
+      "status": "Bloqueada",
+      "dates": "2023-01-10T03:00:00.000Z",
+      "comentario": "Hola",
+      "id": 1
+    },
+    {
+      "reclamoNombre": "Test 2",
+      "area": "Mantenimiento",
+      "status": "Bloqueada",
+      "dates": "2023-01-04T03:00:00.000Z",
+      "comentario": "dadada",
+      "id": 2
+    }
   ],
   "comments": [
     {
