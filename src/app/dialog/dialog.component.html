@@ -1,1 +1,45 @@
-<p>dialog works!</p>
+
+
+
+<h1 mat-dialog-title>Agregar Reclamo </h1>
+<div mat-dialog-content>
+    <form [formGroup]="reclamoForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Titulo Reclamo</mat-label>
+            <input formControlName="reclamoNombre" matInput placeholder="Reclamo">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Seleccionar Area</mat-label>
+           <mat-select formControlName="area" placeholder="Area">
+                <mat-option value="Sistema">Sistemas</mat-option>
+                <mat-option value="Mantenimiento">Mantenimiento</mat-option>
+                <mat-option value="Ama de Llave">Ama de Llave</mat-option>
+           </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Status del Reclamo</mat-label>
+           <mat-select formControlName="status" placeholder="Status del Reclamo">
+                <mat-option value="Asignada">Sistemas</mat-option>
+                <mat-option value="Bloqueada">Mantenimiento</mat-option>
+                <mat-option value="Inspeccionadas">Inspeccionadas</mat-option>
+                <mat-option value="Libre">Libre</mat-option>
+                <mat-option value="No Aplica">No Aplica</mat-option>
+                <mat-option value="Ocupada">Ocupada</mat-option>
+           </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Fecha de Reclamo</mat-label>
+            <input matInput formControlName="dates" [matDatepicker]="dp">
+            <mat-datepicker-toggle matIconSuffix [for]="dp"></mat-datepicker-toggle>
+            <mat-datepicker #dp></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Comentario</mat-label>
+               <textarea formControlName="comentario"matInput></textarea>
+              </mat-form-field>
+              </form>
+       <div mat-dialog-action [align]="'end'">
+<button mat-raised-button color="primary" mat-dialog-close>Cerrar</button>
+<button mat-raised-button color="primary"(click)="addReclamo()">Guardar</button>
+</div>
+</div>
