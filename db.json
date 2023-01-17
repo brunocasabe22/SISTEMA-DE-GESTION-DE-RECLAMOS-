@@ -1,14 +1,5 @@
 {
-  "reclamoList": [
-    {
-      "reclamoNombre": "addad",
-      "area": "Sistema",
-      "status": "Inspeccionadas",
-      "dates": "2023-01-12T03:00:00.000Z",
-      "comentario": "adadad",
-      "id": 1
-    }
-  ],
+  "reclamoList": [],
   "comments": [
     {
       "id": 1,
